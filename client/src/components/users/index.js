@@ -9,14 +9,14 @@ var Users = React.createClass({
   componentDidMount() {
     fetch('/users')
       .then(res => res.json())
-      .then(users => this.setState({ users }));
+      .then(users => this.setState({ users: users }));
   },
   render: function() {
     return (
         <div className="Users">
           <h1>Users</h1>
           {this.state.users.map(user =>
-            <div key={user.id}>{user.name} <br> {user.phone}</br> <br> {user.email} </br></div>
+            <div key={user.id}>{user.name} {user.surname} - {user.email}</div>
           )}
         </div>
     );
