@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class AllUsers extends Component {
   constructor(props) {
       super(props)
-      console.log(props)
+      // console.log(props)
       this.state = {
         members: []
       }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { setVisibilityFilter } from '../../actions'
+import { setVisibilityFilter, setMembers } from '../../actions'
 import AllUsers from './allusers'
 
 import { connect } from 'react-redux';

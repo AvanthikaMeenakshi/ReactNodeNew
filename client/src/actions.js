@@ -7,3 +7,11 @@ export const VisibilityFilters = {
 export function setVisibilityFilter(filter) {
   return { type: SET_VISIBILITY_FILTER, filter }
 }
+
+
+
+export function setMembers() {
+	fetch('/users')
+      .then(res => res.json())
+      .then(members => console.log(members));
+}
